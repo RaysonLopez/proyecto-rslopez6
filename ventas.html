@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Market</title>
+    <link rel="stylesheet" href="./css/ventas.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./img/logo.png" alt="" class="logo" />
+
+      <div class="container-search">
+        <figure class="envios-box">
+          <img src="./img/ubicacion.png" alt="" class="ubicacion" />
+          <figcaption>
+            <h1 class="envios-txt">Envíos a Ecuador</h1>
+          </figcaption>
+        </figure>
+        <div class="container-search-input">
+          <input type="search" placeholder="Busca productos, marcar y otros" />
+          <img src="./img/lupa.png" alt="" class="lupa" />
+        </div>
+      </div>
+
+      <div class="container-kart">
+        <img src="./img/ecuador.webp" alt="" class="ecuador" />
+        <span class="es">ES</span>
+        <img src="./img/carrito.jpg" alt="" class="carrito" />
+      </div>
+    </header>
+    <nav>
+      <button type="button">Explorar</button>
+      <button type="button">Electronicos</button>
+      <button type="button">Casa y Jardin</button>
+      <button type="button">Juguetes</button>
+      <button type="button">Relojes</button>
+    </nav>
+    <main>
+      <aside>
+        <!-- ul es para lista -->
+        <ul>
+          <!-- es una lista sirve (li*n) -->
+          <li>
+            <figure class="pedidos">
+              <img src="./img/pedidos.png" alt="" class="pedidos-img" />
+              <figcaption>Tus pedidos</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="perfil">
+              <img src="./img/perfil.png" alt="" class="perfil-img" />
+              <figcaption>Tu perfil</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="m-Pago">
+              <img src="./img/pago.png" alt="" class="pago-img" />
+              <figcaption>Métodos de pago</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="ventas">
+              <img src="./img/ventas.jpg" alt="" class="ventas-img" />
+              <figcaption>Tus ventas</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="cerrar">
+              <img src="./img/cerrar.png" alt="" class="cerrar-img" />
+              <figcaption>Cerrar sesión</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </aside>
+      <section class="subir-productos">
+        <h2>Subir productos</h2>
+
+        <div class="producto-preview">
+          <img src="./img/relojPared.png" alt="Producto" class="producto-img" />
+          <div class="producto-info">
+            <h3>Nombre del artículo</h3>
+            <p class="precio">Precio $ ****</p>
+            <p>Descripción:</p>
+          </div>
+        </div>
+
+        <form class="formulario-producto">
+          <div class="form-grupo">
+            <label for="nombre-producto">Nombre del producto</label>
+            <input type="text" id="nombre-producto" class="form-control" />
+          </div>
+
+          <div class="form-grupo">
+            <label for="precio-producto">Precio ($)</label>
+            <input type="number" id="precio-producto" class="form-control" />
+          </div>
+
+          <div class="form-grupo">
+            <label for="descripcion-producto">Descripción</label>
+            <textarea
+              id="descripcion-producto"
+              class="form-control"
+              rows="5"
+            ></textarea>
+          </div>
+
+          <div class="form-grupo">
+            <label for="categoria-producto">Categoría</label>
+            <select id="categoria-producto" class="form-control">
+              <option value="">Seleccionar categoría</option>
+              <option value="electronics">Electrónicos</option>
+              <option value="home">Casa y Jardín</option>
+              <option value="toys">Juguetes</option>
+              <option value="watches">Relojes</option>
+            </select>
+          </div>
+
+          <div class="form-grupo">
+            <label for="imagen-producto">Imágenes del producto</label>
+            <input type="file" id="imagen-producto" class="form-control" />
+          </div>
+
+          <div class="separador"></div>
+
+          <button type="submit" class="btn-publicar">Publicar producto</button>
+        </form>
+      </section>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Market</title>
+    <link rel="stylesheet" href="./css/pago.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./img/logo.png" alt="" class="logo" />
+
+      <div class="container-search">
+        <figure class="envios-box">
+          <img src="./img/ubicacion.png" alt="" class="ubicacion" />
+          <figcaption>
+            <h1 class="envios-txt">Envíos a Ecuador</h1>
+          </figcaption>
+        </figure>
+        <div class="container-search-input">
+          <input type="search" placeholder="Busca productos, marcar y otros" />
+          <img src="./img/lupa.png" alt="" class="lupa" />
+        </div>
+      </div>
+
+      <div class="container-kart">
+        <img src="./img/ecuador.webp" alt="" class="ecuador" />
+        <span class="es">ES</span>
+        <img src="./img/carrito.jpg" alt="" class="carrito" />
+      </div>
+    </header>
+    <nav>
+      <button type="button">Explorar</button>
+      <button type="button">Electronicos</button>
+      <button type="button">Casa y Jardin</button>
+      <button type="button">Juguetes</button>
+      <button type="button">Relojes</button>
+    </nav>
+    <main>
+      <aside>
+        <!-- ul es para lista -->
+        <ul>
+          <!-- es una lista sirve (li*n) -->
+          <li>
+            <figure class="pedidos">
+              <img src="./img/pedidos.png" alt="" class="pedidos-img" />
+              <figcaption>Tus pedidos</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="perfil">
+              <img src="./img/perfil.png" alt="" class="perfil-img" />
+              <figcaption>Tu perfil</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="m-Pago">
+              <img src="./img/pago.png" alt="" class="pago-img" />
+              <figcaption>Métodos de pago</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="ventas">
+              <img src="./img/ventas.jpg" alt="" class="ventas-img" />
+              <figcaption>Tus ventas</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="cerrar">
+              <img src="./img/cerrar.png" alt="" class="cerrar-img" />
+              <figcaption>Cerrar sesión</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </aside>
+      <section class="metodos-pago">
+        <h2>Métodos de pagos</h2>
+
+        <div class="info-privacidad">
+          <img src="./img/candadito.png" alt="Candado" class="icono-candado" />
+          <p>Todos los datos son privados</p>
+        </div>
+
+        <div class="separador"></div>
+
+        <div class="metodo-guardado">
+          <div class="metodo-info">
+            <img src="./img/paypal.png" alt="PayPal" class="logo-paypal" />
+            <p class="correo-usuario">@gmail.com</p>
+          </div>
+          <button class="btn-eliminar">Eliminar</button>
+        </div>
+
+        <div class="agregar-tarjeta">
+          <button class="btn-agregar">
+            <span class="icono-plus">+</span> Agregar una tarjeta de crédito o
+            débito
+          </button>
+        </div>
+
+        <div class="opciones-pago">
+          <div class="opcion-pago">
+            <img src="./img/metodosPago.jpg" alt="PayPal" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

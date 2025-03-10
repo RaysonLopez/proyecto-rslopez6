@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 20% auto;
+}
+
+section {
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+section article {
+  border: 1px solid rgb(225, 225, 225);
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+section br::after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid rgb(150, 150, 150);
+  width: 100%;
+}
+
+section article img {
+  width: 15%;
+}
+
+.detalle-pedido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgb(150, 150, 150); /* Línea superior */
+  padding-top: 0.5rem;
+  border-top: 1px solid #cccccc; /* Gris claro */
+  margin-top: 0.5rem;
+}
+
+header {
+  /* padding: 1rem; */
+  /* 0-255 */
+  border-bottom: 1px solid rgb(220, 220, 220);
+  /* RGB: RED, VERDE AZUL */
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: auto 80% auto;
+}
+
+.container-search {
+  /* background-color: red; */
+  padding: 1rem;
+  display: flex;
+}
+
+.container-search-input {
+  display: flex;
+  width: 100%;
+  margin-left: 24px;
+}
+
+.container-search input {
+  width: 100%;
+  height: 60%;
+  border: 0 0 0 0.5% solid rgb(150, 150, 150);
+  padding: 0.5rem;
+  padding-left: 2%;
+  margin: 10px;
+}
+
+.container-kart {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.container-kart img {
+  width: 40px;
+  height: 40px;
+}
+
+img {
+  width: 100%;
+}
+
+.ubicacion {
+  width: 30px;
+}
+
+.envios-box {
+  display: flex;
+  align-items: center;
+}
+
+.envios-txt {
+  font-size: 14px;
+}
+
+.lupa {
+  width: 40px;
+  height: 40px;
+  transform: translate(-135%, 35%);
+}
+
+.ecuador {
+  width: 30px;
+}
+
+.carrito {
+  width: 30px;
+}
+
+nav {
+  /* sirve para darle color al fondo de la caja 7w7*/
+  background-color: rgb(20, 172, 254);
+  /* sirve para el espaciado de la caja */
+  padding: 10px;
+  /* sirve para alinear elementos hijos funciona solo con flex*/
+  display: flex;
+  /* sirve para que le de espaciados a los elementos */
+  gap: 14px;
+}
+
+nav button {
+  /* sirve para darle color */
+  background-color: rgb(255, 255, 255);
+  /* sirve para darle bordes */
+  border-radius: 4px;
+  /* sirve para quitar el color que tiene en los bordes */
+  border: none;
+  /* sirve para darle espaciado */
+  padding: 6px;
+}
+
+aside {
+  border: 20px;
+  border-radius: 10px;
+  padding: 20px;
+  width: 235px; /* Ancho del contenido */
+  background-color: white;
+  gap: 40px;
+}
+
+aside ul {
+  gap: 40px;
+  list-style: none; /* Elimina los puntos */
+  padding: 16px; /* Espaciado interno */
+  padding-left: 18px;
+  padding-top: 22px;
+  padding-bottom: 20px;
+  padding-right: 70px;
+  align-items: center;
+  border: 2px solid rgb(220, 220, 220); /* Borde azul */
+  border-radius: 12px; /* Bordes redondeados */
+  width: 235px; /* Ajusta el ancho al contenido */
+  background-color: white; /* Fondo blanco */
+}
+
+aside li {
+  display: flex;
+  align-items: center; /* Centra el texto con la imagen */
+  gap: 5px; /* Espacio entre la imagen y el texto */
+  padding: 8px 0;
+}
+
+.pedidos {
+  display: flex;
+  gap: 10px;
+  color: rgb(20, 172, 254);
+}
+
+.pedidos-img {
+  width: 20px;
+}
+
+.pedidos-txt {
+  font-size: 16px;
+}
+
+.perfil {
+  display: flex;
+  gap: 10px;
+}
+
+.perfil-img {
+  width: 24px;
+}
+
+.m-Pago {
+  display: flex;
+  gap: 10px;
+}
+
+.pago-img {
+  width: 20px;
+}
+
+.ventas {
+  display: flex;
+  gap: 10px;
+}
+
+.ventas-img {
+  width: 20px;
+}
+
+.cerrar {
+  display: flex;
+  gap: 10px;
+}
+
+.cerrar-img {
+  width: 24px;
+}
